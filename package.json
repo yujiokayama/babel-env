@@ -1,18 +1,21 @@
 {
-  "name": "babel-env",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "watch": "babel ./src/index.js -w -o ./dist/js/index.js -s",
-    "build": "babel --compact=true ./src/index.js -o ./dist/js/index.js"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "core-js": "^3.1.4",
-    "fetch-polyfill": "^0.8.2",
-    "regenerator-runtime": "^0.13.3"
-  }
+    "name": "babel-env",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "rollup -c",
+        "watch": "rollup -c -w"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.5.5",
+        "@babel/plugin-proposal-class-properties": "^7.5.5",
+        "@babel/plugin-transform-runtime": "^7.5.5",
+        "@babel/preset-env": "^7.5.5",
+        "core-js": "3",
+        "rollup": "^1.20.3",
+        "rollup-plugin-babel": "^4.3.3",
+        "rollup-plugin-commonjs": "^10.1.0",
+        "rollup-plugin-node-resolve": "^5.2.0"
+    }
 }
