@@ -23,7 +23,7 @@ export default {
   input: './src/index.js',
   output: {
     file: './dist/js/index.js',
-    format: 'iife',
+    format: 'esm',
     name: 'index'
   },
   plugins: [
