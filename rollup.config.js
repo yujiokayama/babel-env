@@ -3,8 +3,6 @@
 ■IEIIに対応
 ・Object.values/Object.entries使えない
 ・Promise使えない
-
-
 ・async/await/promise/fetchメソッド変換
 
 dev: sorcemap
